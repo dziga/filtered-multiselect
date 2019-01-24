@@ -34,4 +34,4 @@ Server side with API is built with express framework on top of nodejs. For persi
 
 Client is built with reactJS and split in several components. Main component and FilterItems components are in charge of all the heavy lifting while other components are manly used for rendering. Client is usable without server if server endpoints are mocked (mock is not provided). 
 
-Sass and flexbos are used for styling with assumtion that modern browsers are used. Responsive design tested on chrome device emulator with several major devices.
+Sass and flexbox are used for styling with assumtion that modern browsers are used. Responsive design tested on chrome device emulator with several major devices.
