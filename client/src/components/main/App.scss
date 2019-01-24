@@ -1,0 +1,25 @@
+@import '../common/variables';
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border: 2px solid $border;
+  margin: 10px;
+  border-radius: 5px;
+  background-color: $background;
+  max-width: 300px;
+  height: 400px;
+  font-size: $font-medium;
+    
+  .main {
+    display: inherit;
+    flex-direction: inherit;
+    margin: 0 20px;
+    height: 100%;
+    h3 {
+      font-size: $font-large;
+      font-weight: normal;
+    }
+  }
+}

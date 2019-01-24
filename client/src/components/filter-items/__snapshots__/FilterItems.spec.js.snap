@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`filter items should render with given props 1`] = `
+<div
+  className="items"
+>
+  <div
+    className="item"
+  >
+    <label>
+      <span
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": "book",
+          }
+        }
+      />
+      <input
+        checked={true}
+        id={1}
+        name="checkbox"
+        onChange={[Function]}
+        type="checkbox"
+      />
+      <span
+        className="checkmark"
+      />
+    </label>
+  </div>
+</div>
+`;

@@ -1,0 +1,26 @@
+{
+  "name": "multi-select",
+  "version": "1.0.0",
+  "description": "multiselect filter app",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "cd client && npm i && npm run build",
+    "test": "jest && cd client && npm run coverage",
+    "test:watch": "jest --watchAll",
+    "start": "node index.js"
+  },
+  "author": "Nikola Milivojevic",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "lokijs": "^1.5.6",
+    "yarn": "^1.13.0"
+  },
+  "devDependencies": {
+    "jest": "^23.6.0"
+  },
+  "jest": {
+    "testRegex": "./server/tests/"
+  }
+}
