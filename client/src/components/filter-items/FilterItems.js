@@ -8,7 +8,6 @@ class FilterItems extends Component {
   constructor(props) {
     super(props)
     this.state = {items: props.items}
-    this.onItemSelected = this.onItemSelected.bind(this)
   }
 
   componentWillReceiveProps(props) {
@@ -31,7 +30,7 @@ class FilterItems extends Component {
     })
   }
 
-  onItemSelected(item) {
+  onItemSelected = (item) => {
     item.checked = !item.checked
     this.setState({items: sort(this.state.items)})
     saveSelected(item)

@@ -11,8 +11,6 @@ class App extends Component {
   constructor() {
     super()
     this.state = {items: [], search:''}
-    this.onSearch = this.onSearch.bind(this)
-    this.onSubmit = this.onSubmit.bind(this)
   }
 
   async componentWillMount() {
@@ -33,11 +31,11 @@ class App extends Component {
     );
   }
 
-  onSearch(search) {
+  onSearch = (search) => {
     this.setState({search})
   }
 
-  onSubmit() {
+  onSubmit = () => {
     this.state.items.filter(item => item.checked).map(item => console.log(item.label))
   }
 }
